@@ -14,7 +14,8 @@ def captureZoom():
             break
         except pywinauto.findbestmatch.MatchError: # Zoomミーティング入室していない -> 再取得
             continue
-
+    
+    ''' 警告文を出す <-  実装した箇所 '''
     messagebox.showinfo('確認', 'ミュートを確認してください．')
 
     # Zoom Client閉じる
